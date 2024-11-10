@@ -1,0 +1,62 @@
+WebProject/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── dao/                         <-- Your DAO classes will be here
+│   │   │   │   ├── UserDAO.java             <-- Example DAO class for user-related DB operations
+│   │   │   │   ├── ChessGameDAO.java        <-- DAO class for managing chess game data
+│   │   │   │   ├── GameHistoryDAO.java      <-- DAO class for managing game history data
+│   │   │   │   ├── DatabaseConnection.java  <-- Handles DB connection logic (singleton)
+│   │   │   ├── models/                      <-- Models representing database entities
+│   │   │   │   ├── User.java                <-- User model class (represents users in DB)
+│   │   │   │   ├── ChessGame.java           <-- Chess game model class (represents a chess game)
+│   │   │   │   ├── GameHistory.java         <-- Game history model class (represents individual game records)
+│   │   │   ├── services/                    <-- Service classes handling business logic
+│   │   │   │   ├── UserService.java         <-- Service for user-related business logic
+│   │   │   │   ├── ChessGameService.java    <-- Service for chess game-related logic
+│   │   │   │   ├── GameHistoryService.java  <-- Service for handling game history logic
+│   │   │   ├── servlets/                    <-- Servlets handling HTTP requests
+│   │   │   │   ├── UserServlet.java         <-- Servlet for user-related requests
+│   │   │   │   ├── ChessGameServlet.java    <-- Servlet for chess game-related requests
+│   │   │   │   ├── GameHistoryServlet.java  <-- Servlet for game history-related requests
+│   │   │   ├── utils/                       <-- Utility classes
+│   │   │   │   ├── Validator.java           <-- Utility class for input validation
+│   │   │   └── MainApp.java                 <-- Main app class for launching the app
+│   ├── resources/                           <-- Configuration files, SQL scripts, etc.
+│   │   ├── database.properties              <-- Database connection properties
+│   │   └── sql/
+│   │       ├── schema.sql                   <-- SQL for creating database schema
+│   │       └── data.sql                     <-- SQL for inserting data into the database
+│   └── webapp/
+│       ├── WEB-INF/                         <-- Web configuration
+│       └── views/                           <-- JSP views for rendering UI
+│           ├── index.jsp                    <-- Main page of your app
+│           ├── register.jsp                 <-- Registration page
+│           ├── profile.jsp                  <-- User profile page
+│           ├── game.jsp                     <-- Chess game interface
+│           ├── gameHistory.jsp              <-- Game history view
+│           └── templates/                   <-- Shared JSP templates
+│               ├── header.jsp               <-- Common header
+│               ├── footer.jsp               <-- Common footer
+│       ├── static/                          <-- Static files (CSS, JavaScript, Images, etc.)
+│           ├── css/                         <-- CSS files
+│           │   ├── styles.css               <-- Main CSS file for styling your pages
+│           ├── js/                          <-- JavaScript files
+│           │   ├── app.js                   <-- JavaScript for frontend logic (e.g., game logic, user interactions)
+│           ├── img/                         <-- Image files
+│               ├── logo.png                 <-- Project logo or other images
+└── test/
+│   ├── java/
+│   │   ├── dao/                            <-- Test DAO classes
+│   │   │   ├── UserDAOTest.java            <-- Unit tests for UserDAO
+│   │   │   ├── ChessGameDAOTest.java       <-- Unit tests for ChessGameDAO
+│   │   │   ├── GameHistoryDAOTest.java     <-- Unit tests for GameHistoryDAO
+│   │   ├── services/                       <-- Test service classes
+│   │   │   ├── UserServiceTest.java        <-- Unit tests for UserService
+│   │   │   ├── ChessGameServiceTest.java   <-- Unit tests for ChessGameService
+│   │   │   ├── GameHistoryServiceTest.java <-- Unit tests for GameHistoryService
+│   │   ├── servlets/                       <-- Test servlet classes
+│   │   │   ├── UserServletTest.java        <-- Unit tests for UserServlet
+│   │   │   ├── ChessGameServletTest.java   <-- Unit tests for ChessGameServlet
+│   │   │   ├── GameHistoryServletTest.java <-- Unit tests for GameHistoryServlet
+└── README.md                               <-- Project documentation
