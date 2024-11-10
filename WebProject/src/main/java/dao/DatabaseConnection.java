@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
     // Database details
-    private static final String URL = "jdbc:postgresql://localhost:5432/Chess_game";
-    private static final String USER = "postgres"; // Replace with your PostgreSQL username
-    private static final String PASSWORD = "password"; // Replace with your PostgreSQL password
+    private static final String URL = "jdbc:postgresql://localhost:5432/Chess_game"; // Database URL
+    private static final String USER = "postgres"; // PostgreSQL username
+    private static final String PASSWORD = "password"; // PostgreSQL password
 
     public static Connection getConnection() throws SQLException {
         // Register the PostgreSQL driver
